@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="no"?>
+<project default="junit" name="Create Runnable Jar for Eclipse Project with Jar-in-Jar Loader">                              
+
+	<target name="clean">
+		 <delete includeemptydirs="true">
+    <fileset dir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\bin" includes="**/*"/>
+ </delete>
+
+	</target>
+
+	<target name="compile" depends="clean,compile_MavAppoint" >
+	</target>
+	
+	  <!-- Libraries on which MavAppoint depends -->
+  <path id="classpath.base_MavAppoint">                                                                                                                           
+         
+  </path>  	
+
+  <target name="compile_MavAppoint" >
+    <javac destdir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\bin"  source="1.8" target="1.8" encoding="Cp1252" includeantruntime="false"> <!-- includes="**/*.java" -->
+		<src path="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\src"/>
+
+		
+        <classpath refid="classpath.base_MavAppoint" />
+    </javac>
+
+	<copy todir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\bin">
+	<fileset dir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\src">
+		<include name="**/*"/>
+  		<exclude name="**/*.java"/>
+	</fileset>
+</copy>
+
+  </target>
+
+
+	
+	
+	<target name="junit" depends="compile,junit_MavAppoint">
+	  <fail message="Test failure detected, check test results." if="test.failed" />
+	</target>
+	
+	  <!-- Libraries on which MavAppoint depends for tests -->
+  <path id="classpath_junit.base_MavAppoint">                                                                                                                           
+         
+        <!-- For JUnit tests -->
+        <pathelement location="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\bin" />    
+  </path>  	
+
+<target name="junit_MavAppoint" depends="compile">
+  <junit haltonfailure="no" failureproperty="test.failed">
+    <classpath refid="classpath_junit.base_MavAppoint"/>
+    <batchtest todir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\reports">
+    		       <fileset dir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\src">
+	            <include name="**/*Test.java" />
+	            <include name="**/*Tests.java" />
+	       </fileset>
+
+    </batchtest>
+    <formatter type="xml" usefile="true"/>
+  </junit>
+</target>   
+  
+
+	
+	
+</project>
