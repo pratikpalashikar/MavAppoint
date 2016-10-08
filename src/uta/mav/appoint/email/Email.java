@@ -23,8 +23,8 @@ public class Email {
 	}
 
 	public void sendMail() {
-		final String user = "mavappoint.donotreply@gmail.com";
-		final String pass = "mavappointemail";
+		final String user = "engineers159@gmail.com";
+		final String pass = "124812481248";
 
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
@@ -43,7 +43,7 @@ public class Email {
 
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(
-					"mavappoint.donotreply@gmail.com"));
+					"engineers159@gmail.com"));
 			message.setRecipients(Message.RecipientType.TO,
 					InternetAddress.parse(toEmail));
 			message.setSubject(subject);

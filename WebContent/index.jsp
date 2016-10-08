@@ -1,6 +1,6 @@
-
-<%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
 <jsp:include page="templates/header.jsp" />
+<%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
+
 <div class="container">
 
 	<div class="btn-group">

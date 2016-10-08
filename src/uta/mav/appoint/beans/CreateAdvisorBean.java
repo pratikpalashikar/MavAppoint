@@ -26,6 +26,7 @@ public class CreateAdvisorBean {
 	/**
 	 * @param password the password to set
 	 */
+	
 	public void setPassword(String password) {
 		this.password = password;
 	}

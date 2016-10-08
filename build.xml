@@ -1,67 +1,84 @@
-<?xml version="1.0" standalone="no"?>
-<project default="junit" name="Create Runnable Jar for Eclipse Project with Jar-in-Jar Loader">                              
-
-	<target name="clean">
-		 <delete includeemptydirs="true">
-    <fileset dir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\bin" includes="**/*"/>
- </delete>
-
-	</target>
-
-	<target name="compile" depends="clean,compile_MavAppoint" >
-	</target>
-	
-	  <!-- Libraries on which MavAppoint depends -->
-  <path id="classpath.base_MavAppoint">                                                                                                                           
-         
-  </path>  	
-
-  <target name="compile_MavAppoint" >
-    <javac destdir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\bin"  source="1.8" target="1.8" encoding="Cp1252" includeantruntime="false"> <!-- includes="**/*.java" -->
-		<src path="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\src"/>
-
-		
-        <classpath refid="classpath.base_MavAppoint" />
-    </javac>
-
-	<copy todir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\bin">
-	<fileset dir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\src">
-		<include name="**/*"/>
-  		<exclude name="**/*.java"/>
-	</fileset>
-</copy>
-
-  </target>
-
-
-	
-	
-	<target name="junit" depends="compile,junit_MavAppoint">
-	  <fail message="Test failure detected, check test results." if="test.failed" />
-	</target>
-	
-	  <!-- Libraries on which MavAppoint depends for tests -->
-  <path id="classpath_junit.base_MavAppoint">                                                                                                                           
-         
-        <!-- For JUnit tests -->
-        <pathelement location="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\bin" />    
-  </path>  	
-
-<target name="junit_MavAppoint" depends="compile">
-  <junit haltonfailure="no" failureproperty="test.failed">
-    <classpath refid="classpath_junit.base_MavAppoint"/>
-    <batchtest todir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\reports">
-    		       <fileset dir="C:\Users\Pratik\Desktop\SoftwareEngineering\mavAppoint\MavAppointment\MavAppoint\src">
-	            <include name="**/*Test.java" />
-	            <include name="**/*Tests.java" />
-	       </fileset>
-
-    </batchtest>
-    <formatter type="xml" usefile="true"/>
-  </junit>
-</target>   
-  
-
-	
-	
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="MavAppoint">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="F:/eclipse-jee-mars-R-win32-x86_64/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="WebContent/WEB-INF/lib/activation.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mail.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-5.1.32-bin.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="Apache Tomcat v7.0 [Apache Tomcat v7.0 (4)].libraryclasspath">
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/annotations-api.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/catalina-ant.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/catalina-ha.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/catalina-tribes.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/catalina.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/ecj-4.4.2.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/el-api.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/jasper-el.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/jasper.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/jsp-api.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/servlet-api.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat-api.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat-coyote.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat-dbcp.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat-jdbc.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat-util.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/tomcat7-websocket.jar"/>
+        <pathelement location="../../../../../../../apache-tomcat-7.0.69/lib/websocket-api.jar"/>
+    </path>
+    <path id="MavAppoint.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0 (4)].libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.ucls"/>
+                <exclude name="**/*.useq"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="MavAppoint.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
 </project>

@@ -99,8 +99,8 @@ public class RegisterServlet extends HttpServlet {
 						"Your account for MavAppoint has been created! Your account information is:\n"
 								+ "Role: " + role + "\n" + "Password: "
 								+ password, email);
-				//userEmail.sendMail();
-				//response.setHeader("Refresh","2; URL=login");
+				userEmail.sendMail();
+				response.setHeader("Refresh","2; URL=login");
 				request.getRequestDispatcher("/success.jsp").forward(request,response);
 				//session.setAttribute("message",
 					//	"Account Created! Please check your E-mail.");
