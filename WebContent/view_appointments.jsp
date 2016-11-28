@@ -52,7 +52,8 @@
 								<td><%=array.get(i).getDescription() %></td>
 								<td><%=array.get(i).getStudentid()%></td>
 								<td><%=array.get(i).getStudentEmail()%></td>
-								<td class="text-center"><button type="button" id=button1<%=i%> onclick="button<%=i%>()">Cancel</button></td>
+								<td class="text-center"><button type="button" id=button1<%=i%> onclick="button<%=i%>()"> Cancel </button></td>
+</button></td>
 								<td class="text-center"><button type="button" id=button2_<%=i%> onclick="button_<%=i%>()">Edit</button></td>
 								<td class="text-center"><button type="button" id=button3_<%=i%> onclick="button__<%=i%>()">Email</button></td>
 							</tr>

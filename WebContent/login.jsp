@@ -19,6 +19,16 @@
 	border-radius: 50%;
 }
 </style>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$('#forgot').on('click',function(){
+		window.location = "forgot_password.jsp";			
+	});
+});
+
+</script>
 
  <div class="container" style="margin-top:40px">
 		<div class="row">
@@ -56,6 +66,9 @@
 										</div>
 										<div class="form-group">
 											<input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
+										</div>
+										<div class="form-group">
+											<input id="forgot" class="btn btn-lg btn-primary btn-block"  value="Forgot Password">
 										</div>
 									</div>
 								</div>

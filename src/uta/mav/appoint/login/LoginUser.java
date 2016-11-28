@@ -10,6 +10,8 @@ public class LoginUser {
 	String msg;
 	String password;
 	Integer userId;
+	String phoneNumber;
+	String notificationValue;
 
 	public LoginUser() {
 		email = "";
@@ -89,4 +91,22 @@ public class LoginUser {
 	public void setRole(String role) {
 		this.role = role;
 	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getNotificationValue() {
+		return notificationValue;
+	}
+
+	public void setNotificationValue(String notificationValue) {
+		this.notificationValue = notificationValue;
+	}
+	
+	
 }

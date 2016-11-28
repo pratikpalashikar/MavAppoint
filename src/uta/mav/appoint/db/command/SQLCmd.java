@@ -31,7 +31,7 @@ public abstract class SQLCmd {
 		try
 	    {
 	    Class.forName("com.mysql.jdbc.Driver").newInstance();
-	    String jdbcUrl = "jdbc:mysql://localhost:3307/mav_appointment";
+	    String jdbcUrl = "jdbc:mysql://mavappoint.caeay9jhctdm.us-west-2.rds.amazonaws.com:3306/mav_appointment";
 	    String userid = "root";
 	    String password = "";
 	    conn = DriverManager.getConnection(jdbcUrl,userid,password);

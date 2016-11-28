@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.11" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="uta.mav.appoint.ViewAppointmentServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/ViewAppointmentServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="288" x="217" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="uta.mav.appoint.PrimitiveTimeSlot" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/PrimitiveTimeSlot.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="387" width="421" x="5652" y="372"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="uta.mav.appoint.CompositeTimeSlot" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/CompositeTimeSlot.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="421" x="6113" y="372"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="uta.mav.appoint.IndexServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/IndexServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="288" x="545" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="uta.mav.appoint.SendMeetingServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/SendMeetingServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="288" x="873" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="uta.mav.appoint.TimeSlotComponent" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/TimeSlotComponent.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="387" width="435" x="6113" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="uta.mav.appoint.Updatepassword" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/Updatepassword.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="1201" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="uta.mav.appoint.AdvisingServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/AdvisingServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="288" x="1529" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="uta.mav.appoint.ScheduleAppointmentServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/ScheduleAppointmentServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="288" x="1857" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="uta.mav.appoint.DeleteAdvisorServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/DeleteAdvisorServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="288" x="2185" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="uta.mav.appoint.CreateAdvisorServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/CreateAdvisorServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="288" x="2513" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="uta.mav.appoint.LogoutServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/LogoutServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="284" x="2841" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="uta.mav.appoint.UpdatePasswordServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/UpdatePasswordServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="3165" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="uta.mav.appoint.ManageUserTypeServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/ManageUserTypeServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="288" x="3493" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="uta.mav.appoint.ManageTimeSlotServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/ManageTimeSlotServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="288" x="3821" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="uta.mav.appoint.SendEmailServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/SendEmailServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="288" x="4149" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="uta.mav.appoint.CustomizeServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/CustomizeServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="284" x="4477" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="uta.mav.appoint.AddAppointmentServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/AddAppointmentServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="4801" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="uta.mav.appoint.LoginServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/LoginServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="5129" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="uta.mav.appoint.AllocateTimeServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/AllocateTimeServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="5457" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="uta.mav.appoint.ManageAppointmentServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/ManageAppointmentServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="288" x="5785" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="uta.mav.appoint.ChangePasswordServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/ChangePasswordServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="288" x="6588" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="uta.mav.appoint.EditAdvisorServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/EditAdvisorServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="288" x="6916" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="uta.mav.appoint.RegisterServlet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/RegisterServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="288" x="7244" y="-55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <association id="27">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="28" name="children"/>      
+      <multiplicity id="29" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

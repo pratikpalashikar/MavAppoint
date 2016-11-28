@@ -60,22 +60,39 @@
 		    							basicWeek: true,
 		    							'default' : true,
 		    						}
-		    						<%if (schedules != null){%>
+		    						<%if (schedules != null && appointments!=null){%>
 		    				    	,
 		    						eventClick: function(event,element){
 		    							if (event.id >= 0){
+		    							<%if (appointments.size() <= 1) {
+		    								
+		    							%>	
 		    							document.getElementById("id1").value = event.id;
 		    							document.getElementById("pname").value = event.title;
-		    							addAppt.submit();
+		    							$('#info').modal();
+		    							<%
+		    							//addAppt.submit();
 		    							}
-		    							else{
-		    								updateAppt.submit();
+		    							else{%>
+		    							$('#updateAppt').modal();	
+		    							//updateAppt.submit();
+		    							<%}%>
 		    							}
 		    						},
 		    					events: [
+		    					         
+		    					         {
+		    					        	 	title:'<%="Waitlist "+ schedules.get(0).getName()%>',
+			 									start:'<%="2016-11-27T"+schedules.get(0).getStartTime()%>',
+			 									end:'<%="2016-11-27T"+schedules.get(0).getEndTime()%>',
+			 									id:<%=100%>,
+			 									backgroundColor: 'black'
+		    					         },
+		    					         
 		 		    		<% int i = 0;
 									for (i=0;i<schedules.size();i++){%> 
 		 								{
+		 			
 		 									title:'<%=schedules.get(i).getName()%>',
 		 									start:'<%=schedules.get(i).getDate()+"T"+schedules.get(i).getStartTime()%>',
 		 									end:'<%=schedules.get(i).getDate()+"T"+schedules.get(i).getEndTime()%>',
@@ -83,7 +100,8 @@
 		 									backgroundColor: 'blue'
 		 								}
 		 								<%if(i != (schedules.size()-1)||appointments != null){%>,<%}%>
-		 					 		<%}	
+		 					 		<%}
+									
 									if (appointments != null){
 										for(i=1;i<1+appointments.size();i++){%>
 		 									{
@@ -92,25 +110,85 @@
  												end:'<%=appointments.get(i-1).getAdvisingDate()+"T"+appointments.get(i-1).getAdvisingEndTime()%>',
  												id:<%=-i%>,
  												backgroundColor: 'orange'
- 											}
+		 									}
  											<%if(i != appointments.size()){%>,<%}
  										}
 									}%>		 					 
 		 					 			]<%}%>
+		    					
 		    					});
+		    			
 		    				});
 	 						</script>	
 		 						
 
-	<form name=addAppt action="schedule" method="get">
+	<!-- <form name=addAppt action="schedule" method="get">
 		<input type="hidden" name=id1 id="id1">
 		<input type="hidden" name=pname id="pname">
 		<input type="hidden" name=advisor_email id="advisor_email">
-	</form>		 							
+	</form>	 -->	
 	
-	<form name=updateAppt action="appointments" method="get">
+	<form name=info action="schedule" method="get">
+	<div class="modal fade" id="info" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id=infoLabel">Miscellaneous Information</h4>
+				</div>
+				<div class="modal-body">
+							<input type="hidden" name=id1 id="id1">
+							<input type="hidden" name=pname id="pname">
+							<input type="hidden" name=advisor_email id="advisor_email">
+							<label for="reason"><font color="#0" size="4">Reason for Advising</font></label> 
+							<br>
+							<input type="text" class="form-control" name=reason placeholder="Enter the reason for advising ?">
+							<label for="time"><font color="#0" size="4">Approximate time</font></label> 
+							<br>
+							<input type="text" class="form-control" name=time placeholder="How much time it will take ?">
+							<label for="enrolled"><font color="#0" size="4">Courses enrolled</font></label> 
+							<br>
+							<input type="text" class="form-control" name=enrolled placeholder="which course you are enrolled ?">
+							<label for="semester"><font color="#0" size="4">Current Semester</font></label> 
+							<br>
+							<input type="text" class="form-control" name=semester placeholder="which semester you are in ?">
+							<label for="opt"><font color="#0" size="4">Advising for OPT</font></label> 
+							<br>
+							<input type="text" class="form-control" name=opt placeholder="Is the advising needed for opt ?">
+							<label for="urgent"><font color="#0" size="4">Is appointment urgent ?</font></label> 
+							<br>
+							<input type="text" class="form-control" name=urgent placeholder="Is the appointment urgent ?">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default"
+						data-dismiss="modal"> Close 
+					</button>
+					<input type="submit" class="btn btn-default" value="Submit">
+				</div>
+			</div>
+		</div>
+	</div>
+	</form> 							
+	
+	<form name=updateAppt action="" method="get">
+		<div class="modal fade" id="updateAppt" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id=infoLabel">Warning</h4>
+				</div>
+				<div class="modal-body">
+							<h1>You already have booked appointment </h1>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default"
+						data-dismiss="modal"> Close 
+					</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 	</form>
-  	
 	<br/><br/><hr>
 </div>
 <style>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.11" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="uta.mav.appoint.visitor.AddAppointmentTypeVisitor" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/visitor/AddAppointmentTypeVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="248" x="124" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="uta.mav.appoint.visitor.ManageTimeSlotVisitor" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/visitor/ManageTimeSlotVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="248" x="412" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="uta.mav.appoint.visitor.GetNextAppointmentVisitor" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/visitor/GetNextAppointmentVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="247" x="700" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="uta.mav.appoint.visitor.AppointmentVisitor" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/visitor/AppointmentVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="248" x="987" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="uta.mav.appoint.visitor.CreateAdvisorVisitor" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/visitor/CreateAdvisorVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="240" x="1275" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="uta.mav.appoint.visitor.CancelAppointmentVisitor" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/visitor/CancelAppointmentVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="248" x="1555" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="uta.mav.appoint.visitor.AllocateTimeVisitor" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/visitor/AllocateTimeVisitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="248" x="1843" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="uta.mav.appoint.visitor.Visitor" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/visitor/Visitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="248" x="987" y="-172"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="12">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

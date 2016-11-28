@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.11" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="uta.mav.appoint.beans.AdvisingSchedule" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/AdvisingSchedule.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="387" width="149" x="138" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="uta.mav.appoint.beans.AdvisingType" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/AdvisingType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="131" x="327" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="uta.mav.appoint.beans.CustomizeSettings" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/CustomizeSettings.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="153" x="498" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="uta.mav.appoint.beans.Appointment" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/Appointment.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="657" width="187" x="691" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="uta.mav.appoint.beans.AppointmentType" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/AppointmentType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="131" x="918" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="uta.mav.appoint.beans.RegisterBean" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/RegisterBean.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="151" x="1089" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="uta.mav.appoint.beans.CreateAdvisorBean" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/CreateAdvisorBean.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="150" x="1280" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="uta.mav.appoint.beans.GetSet" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/GetSet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="166" x="1470" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="uta.mav.appoint.beans.AllocateTime" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/AllocateTime.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="145" x="1676" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
